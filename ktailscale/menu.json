@@ -1,0 +1,30 @@
+{
+  "items": [
+    {
+      "name": "ktailscale",
+      "priority": 1,
+      "items": [
+        {
+          "name": "Start",
+          "if": "true",
+          "action": "./bin/tailscale.sh",
+          "params": "start",
+          "exitmenu": false,
+          "refresh": true,
+          "status": false,
+          "internal": "status Start tailscale"
+        },
+        {
+          "name": "Stop",
+          "if": "true",
+          "action": "./bin/tailscale.sh",
+          "params": "stop",
+          "exitmenu": false,
+          "refresh": true,
+          "status": false,
+          "internal": "status Stop tailscale"
+        }
+      ]
+    }
+  ]
+}
